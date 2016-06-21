@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-#This a game that
+#This a game of survival. See how many monsters you can escape from!
 
 import random
 
@@ -20,7 +20,7 @@ def spookyGame():
             print 'game over!! :(\n'
 
             print 'want to play again?\n'
-            playagame = raw_input('type "yes" or "no"\nAnswer: ')
+            playagame = raw_input('Type "yes" to play again! Type anything else to quit.\nAnswer: ')
             if playagame == 'yes' or playagame == 'y' or playagame == 'YES':
                     spookyGame()
             else:
@@ -30,8 +30,9 @@ def spookyGame():
             print 'your health is now at ' + str(health) + ' points\n'
             score += 1
 
-print 'want to play a game?\n'
-playagame = raw_input('type "yes" or "no"\nAnswer: ')
+print '\nthis is a game about trying to see how many monsters you can get past.'
+print 'want to play?\n'
+playagame = raw_input('Type "yes" to play! Type anything else to quit.\nAnswer: ')
 if playagame == 'yes' or playagame == 'y' or playagame == 'YES':
         spookyGame()
 else:
